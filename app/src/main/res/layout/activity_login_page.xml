@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginPage">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="serif"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameEtxt"
+        android:layout_width="326dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginright="3dp"
+        android:background="@drawable/textbackground"
+        android:drawableLeft="@drawable/person_24"
+        android:hint=" User name"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEtxt"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordEtxt"
+        android:layout_width="326dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/textbackground"
+        android:drawableLeft="@drawable/key_24"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/usernameEtxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameEtxt"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#3F7AB8"
+        android:text="Login"
+
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEtxt"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@+id/passwordEtxt"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEtxt"
+        app:strokeColor="#F6F1F1"
+        app:strokeWidth="2dp">
+
+    </Button>
+
+    <TextView
+
+        android:id="@+id/donthaveaccount"
+        android:layout_width="160dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="serif"
+        android:text=" Don't have account?"
+        android:textColor="@color/white"
+
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+
+        android:id="@+id/Signup"
+        android:layout_width="101dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="serif"
+        android:text="Sign up!"
+        android:textColor="#FBFBFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/donthaveaccount"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

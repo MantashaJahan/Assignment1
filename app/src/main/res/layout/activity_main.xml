@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/edu">
+
+    </ImageView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="FreeEdu"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernameEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbackground"
+        android:hint="Enter your username.."
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/emailEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbackground"
+        android:hint="Enter your email"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/passwordEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbackground"
+        android:hint="Enter your password"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/confirmpasswordEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbackground"
+        android:hint="Enter your confirm password"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#3F7AB8"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:strokeColor="#F6F1F1"
+        app:strokeWidth="2dp">
+
+    </Button>
+
+    <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="90dp"
+       android:textColor="@color/white"
+       android:text="I already have an account!!!! Login">
+
+   </EditText>
+
+
+
+
+
+</LinearLayout>
